@@ -8,7 +8,8 @@ fetch(requestUrl)
   .then(function (data) {
     console.log('Github Repo Issues \n----------');
     for (var i = 0; i < data.length; i ++) {
-      console.log(data);
+      console.log(data[i].user,login)
+      console.log(data[i].url);
     }
 
   });
